@@ -17,5 +17,46 @@
             <a href="#distance"><button>Distance</button></a>
         </nav>
     </section>
+    
+    <div id="all-conversion-sections">
+        <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
+
+        <section id="temperature">
+            <div id="tmp">
+                <figure>
+                    <!-- Figure and its caption will come here -->
+                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px">
+                     <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                </figure>
+
+                <article>
+                    <!-- This contains the specific elements for temperature conversion -->
+                     <fieldset>
+                        <legend>Temperature</legend>
+                        <fieldset>
+                            <legend>Temp</legend>
+                        <!-- The fields and button for temperature input will come here -->
+                         <!-- Label for Temperature input -->
+                          <label for="celsius">Celsius</label><br/>
+
+                          <input type="number" id="celsius"/> <br/>
+
+                          <!-- The converison button -->
+                           <button id="temperature">Convert</button><br/>
+
+                          <!-- Label for Temperature output -->
+                           <input type="number" id="fahrenheit"> <br/>
+
+                           <label for="fahrenheit">Fahrenheit</label>
+                        </fieldset>
+                        
+                     </fieldset>
+                </article>
+                <aside>
+                    To convert celsius to fahrenheit, use this formula replacing the `C` with your temperature in celsius: (C * 9/5) + 32
+                </aside>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
