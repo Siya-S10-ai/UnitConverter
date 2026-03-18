@@ -12,6 +12,7 @@ function weight() {
     var kg = document.getElementById("kilo").value;
     var p = kg * 2.2;
     document.getElementById("pounds").value = p;
+    document.getElementById("weightResults").innerHTML = p;
 }
 function distance() {
     //To convert KMs to Miles
