@@ -3,7 +3,7 @@
     <head>
         <!-- This is my page title that appears on the browser window or tab -->
          <title>Unit Conversions</title>
-		 <scrript src="script.js"></scrript>
+		 <script src="script.js"></script>
     </head>
 <body>
     <section id="home">
@@ -49,6 +49,7 @@
                            <input type="number" id="fahrenheit"> <br/>
 
                            <label for="fahrenheit">Fahrenheit</label>
+						   <div id="showFahrenheit"></div>
                         </fieldset>
                         
                      </fieldset>
@@ -73,18 +74,16 @@
 				<legend>Weight</legend>
 				<!-- Label for Weight input -->
 				<label for="kilo">Kilograms</label> <br/>
+				<input type="number" id="kilo" oninput="convert(this)"> <br/>
 
-				<input type="number" id="kilo"> <br/>
+				<!-- Label for Weight output -->
+				 <label for="pounds">Pounds</label> <br/>
+				<input type="number" id="pounds" oninput="convert(this)"> <br/>
 
 				<!-- The conversion button -->
 				<button id="weight" onclick="weight()"> Convert </button> <br/>
 
-				<!-- Label for Weight output -->
-				<input type="number" id="pounds"> <br/>
-
-				<label for="pounds">Pounds</label>
-				
-					<div id="weightResults"></div>
+				<div id="weightResults"></div>
 				
 			</fieldset>
 		<aside>
